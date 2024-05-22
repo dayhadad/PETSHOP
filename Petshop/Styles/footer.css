@@ -1,0 +1,80 @@
+:root{
+    --colornaranja: #ff8c00;
+    --colordarkgrey:#666464;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/pattern.svg);
+    background-size: cover;
+}
+.container-footer{
+    display: flex;
+    ;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box-footer .logo img{
+    width: 75px;
+    height: auto;
+}
+.box-footer .terms{
+    max-width: 300px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--colordarkgrey);
+    font-size: 18px;
+}
+.box-footer h2{
+    margin-bottom: 25px;
+    color: #343434;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.container-footer .box-footer a{
+    text-decoration: none;
+    margin-top: 10px;
+    color: var(--colordarkgrey);
+    font-weight: 500;
+}
+.box-footer a:hover{
+    opacity: 0.8;
+}
+.box-footer a .fa-brands{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.box-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box-copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+@media screen and (max-width: 720px){
+    .container-footer{
+        flex-wrap: wrap;
+    }
+    .box-footer{
+        margin-top: 40px;
+    }
+}

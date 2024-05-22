@@ -1,0 +1,94 @@
+@import url(style.css);
+:root {
+  --colornaranja: #ff8c00;
+  --colordarkgrey: #666464;
+}
+article {
+  margin: 10px;
+  padding: 10px;
+}
+.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.photos .gallery-photos {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img-a img-a img-a img-b img-c"
+    "img-d img-e img-e img-e img-c";
+}
+.img-a {
+  grid-area: img-a;
+}
+.img-b {
+  grid-area: img-b;
+}
+.img-c {
+  grid-area: img-c;
+}
+.img-d {
+  grid-area: img-d;
+}
+.img-e {
+  grid-area: img-e;
+}
+
+.img-a {
+  background-image: url(../img/gallery/beautiful-cat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-b {
+  background-image: url(../img/gallery/poochie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-c {
+  background-image: url(../img/gallery/doggy.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-d {
+  background-image: url(../img/gallery/funny-animals.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-e {
+  background-image: url(../img/gallery/perro-slider1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.gallery-photos div {
+  border-radius: 10px;
+}
+.icons {
+  display: block;
+  position: relative;
+  margin: 20px auto;
+  width: 25px;
+  height: auto;
+  padding: 15px;
+}
+.icons i {
+  color: white;
+}
+@media screen and (max-width: 720px) {
+    .photos{
+        display: none;
+    }
+    .title-video{
+        display: none;
+    }
+
+}

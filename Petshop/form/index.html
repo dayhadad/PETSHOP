@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" initial-scale="1.0", maximun-scale="5.0", user-scalable="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" initial-scale="1.0" , maximun-scale="5.0" ,
+        user-scalable="yes">
     <title>PetShop</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <header>
+        <div class="header-superior">
+            <img src="../img/inicio-logo.png" alt="logo">
+            <a href="index.html"><button>Volver al inicio</button></a>
+        </div>
+    </header>
+
+
     <div class="container">
-    <h3 class="form_title">Completa el formulario e inscribite!</h3>
-    <p class="box_title">Te contactaremos a la brevedad</p>
-    <div class="form">
-    <form action="https://formsubmit.co/daianahadad@hotmail.com.ar" method="POST" autocomplete="off">
-            <p class="box_title">Datos del responsable:</p>
-            <input class="input_campo" type="text" name="nombre" placeholder="Nombre" id="" required>
-            <input class="input_campo" type="text" name="apellido" placeholder="Apellido" id="" required>
-            <input class="input_campo" type="number" name="dni" placeholder="Numero de documento" id="" required>
-            <input class="input_campo" type="tel" name="tel" placeholder="Numero de telefono" id="" minlength="8" required>
-            <input class="input_campo" type="email" name="email" placeholder="Correo electronico"id="" required>
+        <!-- <video autoplay muted loop id="myVideo">
+            <source src="./video1.mp4" type="video/mp4">
+        </video>    -->
+        <h3 class="form-title">Completa el formulario y pedi tu turno!</h3>
+        <p class="box-title">Te contactaremos a la brevedad</p>
+        <div class="form">
+            <form action="https://formsubmit.co/daianahadad@hotmail.com.ar" method="POST" autocomplete="off">
+                <p class="box-title">Datos del responsable:</p>
+                <input class="input-campo" type="text" name="nombre" placeholder="Nombre" id="" required>
+                <input class="input-campo" type="text" name="apellido" placeholder="Apellido" id="" required>
+                <input class="input-campo" type="tel" name="tel" placeholder="Numero de telefono" id="" minlength="8"
+                    required>
+                <input class="input-campo" type="email" name="email" placeholder="Correo electronico" id="" required>
         </div>
         <div class="form">
-        <p class="box_title">Datos del aspirante:</p>
-            <input class="input_campo" type="text" name="nombre" placeholder="Nombre Completo" id="" required>
-            <input class="input_campo" type="date" name="date" placeholder="Fecha de nacimiento" id="" required>
-            <p class="box_title">Aspirante a:</p>
-            <select class="select_campo" name="opcion" id="" placeholder="Seleccione una opción">
+            <p class="box-title">Datos de tu mascota:</p>
+            <input class="input-campo" type="text" name="nombre" placeholder="Nombre" id="" required>
+            <input class="input-campo" type="file" name="archivo" id="" accept="image/png, image/jpeg, image/jpg">
+            <p class="box-title">Tipo de aseo:</p>
+            <select class="select-campo" name="opcion" id="" placeholder="Seleccione una opción">
                 <option value="0">Seleccione una opción</option>
-                <option value="1">1er. grado ciclo lectivo 2024</option>
-                <option value="2">2do. grado ciclo lectivo 2024</option>
-                <option value="3">3er. grado ciclo lectivo 2024</option>
-                <option value="4">4to. grado ciclo lectivo 2024</option>
-                <option value="5">5to. grado ciclo lectivo 2024</option>
-                <option value="6">6to. grado ciclo lectivo 2024</option>
-                <option value="7">7mo. grado ciclo lectivo 2024</option>
+                <option value="1">Baño solamente</option>
+                <option value="2">Corte de pelo</option>
+                <option value="3">Corte de uñas</option>
+                <option value="4">Combo completo</option>
             </select>
+            <div>
+                <p class="box-title">Necesitas traslado?:</p>
+                <input type="radio" id="opcion1" name="contact" value="Si" />
+                <label for="opcion1">Si</label>
+
+                <input type="radio" id="opcion2" name="contact" value="No" />
+                <label for="opcion2">No</label>
+            </div>
         </div>
-            <input class="btn_enviar" type="submit" value="Enviar">
+        <input class="btn-enviar" type="submit" value="Enviar">
         </form>
-        </div>
-    
+    </div>
+
 </body>
+
 </html>

@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root{
+    --colornaranja: #ff8c00;
+    --colordarkgrey:#666464;
+    --colordarkdarkgrey:#222222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+
+.container {
+    /* padding: 40px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 2px 2px 8px var(--color3);
+    border-radius: 6px;
+}
+
+.form input {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+
+}
+
+input {
+    margin: 5px;
+    /* width:30%; */
+    border-style: none;
+    border: 1px solid var(--color3);
+    border-radius: 6px;
+    background-color: var(--color1);
+}
+
+select {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    justify-content: center;
+    /* width: 40%; */
+    background-color: var(--color1);
+    border-radius: 6px;
+    border: 1px solid var(--color3);
+}
+
+.box_title {
+    padding: 0 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color5);
+}
+
+.form_title {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: var(--color5);
+}
+
+.btn_enviar {
+    padding: 5px 25px;
+    width: 65%;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color1);
+    background-color: var(--color3);
+    box-shadow: 2px 2px 8px var(--color2)
+}
+
+@media only screen and (max-width:426px) {
+    .container h3 {
+        text-align: center;
+        padding: 20px;
+        margin: 0 30px;
+    }
+
+    .input_campo {
+        width: 75%;
+    }
+
+    .select_campo {
+        width: 100%;
+        margin: 0;
+    }
+
+    .btn_enviar {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .input_campo {
+        width: 80%;
+    }
+
+    .select_campo {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .container {
+        padding: 20px;
+        margin: 25px;
+        width: 100%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 40%;
+    }
+
+    .btn_enviar {
+        width: 65%;
+        font-size: 1.7rem;
+    }
+
+    .box_title {
+        font-size: 1.5rem;
+    }
+
+    .form_title {
+        font-size: 2.5rem;
+    }
+}

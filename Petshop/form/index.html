@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" initial-scale="1.0", maximun-scale="5.0", user-scalable="yes">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h3 class="form_title">Completa el formulario e inscribite!</h3>
+    <p class="box_title">Te contactaremos a la brevedad</p>
+    <div class="form">
+    <form action="https://formsubmit.co/daianahadad@hotmail.com.ar" method="POST" autocomplete="off">
+            <p class="box_title">Datos del responsable:</p>
+            <input class="input_campo" type="text" name="nombre" placeholder="Nombre" id="" required>
+            <input class="input_campo" type="text" name="apellido" placeholder="Apellido" id="" required>
+            <input class="input_campo" type="number" name="dni" placeholder="Numero de documento" id="" required>
+            <input class="input_campo" type="tel" name="tel" placeholder="Numero de telefono" id="" minlength="8" required>
+            <input class="input_campo" type="email" name="email" placeholder="Correo electronico"id="" required>
+        </div>
+        <div class="form">
+        <p class="box_title">Datos del aspirante:</p>
+            <input class="input_campo" type="text" name="nombre" placeholder="Nombre Completo" id="" required>
+            <input class="input_campo" type="date" name="date" placeholder="Fecha de nacimiento" id="" required>
+            <p class="box_title">Aspirante a:</p>
+            <select class="select_campo" name="opcion" id="" placeholder="Seleccione una opción">
+                <option value="0">Seleccione una opción</option>
+                <option value="1">1er. grado ciclo lectivo 2024</option>
+                <option value="2">2do. grado ciclo lectivo 2024</option>
+                <option value="3">3er. grado ciclo lectivo 2024</option>
+                <option value="4">4to. grado ciclo lectivo 2024</option>
+                <option value="5">5to. grado ciclo lectivo 2024</option>
+                <option value="6">6to. grado ciclo lectivo 2024</option>
+                <option value="7">7mo. grado ciclo lectivo 2024</option>
+            </select>
+        </div>
+            <input class="btn_enviar" type="submit" value="Enviar">
+        </form>
+        </div>
+    
+</body>
+</html>

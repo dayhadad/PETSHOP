@@ -3,16 +3,18 @@
     --colornaranja: #ff8c00;
     --colordarkgrey:#666464;
 }
-
+html, body{
+width:100%;
+overflow-x:hidden;
+}
 .banner{
-
+   width: 100%;
    flex: 0 0 100%;
    height: 250px;
    background-image: url(../img/perro-slider2.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   height: 250px;
 }
 .promociones{
    display: none;
@@ -34,7 +36,7 @@
 
 }
 .container-cards .card{
-    width: 80%;
+    width: 90%;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     margin: 20px auto;
@@ -53,9 +55,9 @@
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.25);
 }
 .container-cards .card img{
-    width: 80%;
+    width: 50%;
     height: 200px;
-    margin: 15px 0px 15px 15px;
+    margin: 15px 0;
 }
 .card .card-info{
     display: flex;
@@ -66,7 +68,7 @@
     color: var(--colordarkgrey);
 }
 .card h4{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
 }
@@ -92,7 +94,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 70px 40px;
+    margin: 70px 20px;
     gap: 30px;
 }
 
@@ -102,7 +104,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 400px;
+    height: 300px;
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     }
@@ -119,7 +121,8 @@
     font-weight: 500;
     font-size: 24px;
     border: 1px solid white;
-    padding: 10px 20px;
+    margin:0px 5px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 .content-box p{
@@ -149,13 +152,12 @@
 
 
 .producto-semanal{
-    width: 100%;
+    width: 90%;
     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 10px;
-    padding:  0px 20px;
+    margin: 30px 15px;
     gap: 30px;
     
 }
@@ -165,32 +167,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 15px;
-    padding: 0px 20px;
+    margin: 10px;
+    padding: 0px;
     gap: 30px;
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 .prod-semanal-container img{
     width: 100%;
-    height: 400px;
+    height: 300px;
+}
+.prod-semanal-info{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 .prod-semanal-info h2{
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     color: var(--colordarkgrey);
     
 }
 .prod-semanal-info h3{
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: underline;
     margin: 15px 0px;
 }
 .prod-semanal-info p{
     font-size: 16px;
     margin: 15px 0px;
-    line-height: 25px;
     color: var(--colordarkgrey);
 }
 .prod-semanal-info .button-basic{
@@ -201,7 +207,7 @@
 }
 .container-sec{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -342,19 +348,42 @@
         flex-direction: column;
     }
     .banner{
-
         height: 380px;
     }
-    .promociones{
+
+    /* MARQUESINA FUNCIONANDO PERO NO SE LOGRA POSICIONAR */
+    /* .marquee{
         background-color: black;
-        color: white;
-        font-size: 10px;
-        padding:10px 0px;
         width:100%;
-        position: absolute;
-        bottom: 60px;
-        display: block;
+        height: 35px;
+        display: flex;
+        overflow: hidden;
     }
+    .marquee-content{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        transform: translateY(-100%);
+        animation: scrolling 20s linear infinite;
+      
+    }
+    .marquee-item{
+        flex-shrink: 0;
+        color: white;
+        padding: 5px;
+    }
+    @keyframes scrolling {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    } */
+
+    }
+
+
 
     .title{
         font-size: 24px;
@@ -392,6 +421,9 @@
         margin: 80px 40px;
         gap: 30px;
     }
+    .image-box{
+        height: 400px;
+    }
     .producto-semanal{
         width: 100%;
         height: 100vh;
@@ -410,6 +442,9 @@
         justify-content: center;
         margin: 20px 30px;
         gap: 30px;
+    }
+    .prod-semanal-info{
+        margin:15px;
     }
     .prod-semanal-info .button-basic{
         margin: 10px 30px ;

@@ -21,3 +21,21 @@ for(let i = 0; i < subMenuBtn.length; i++){
      }
      }
 )};
+
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 100) {
+      document.querySelector('.container_irArriba')
+        .classList.add('mostrar_btn')
+    } else {
+      document.querySelector(".container_irArriba")
+        .classList.remove('mostrar_btn')
+    }
+  }
+  document.querySelector('.container_irArriba')
+    .addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });

@@ -15,8 +15,9 @@
     font-family: "Rubik", sans-serif;
     text-decoration: none;
 }
-body{
-    margin: auto;
+html, body{
+    width:100%;
+    overflow-x:hidden;
 }
 .header-superior{
     display: flex;
@@ -36,59 +37,56 @@ body{
     height: 100%;
     /* position: fixed; */
     display: flex;
-    margin: auto;
+    margin: auto auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background-image: url(./perro-slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-/*
 #myVideo{
-    max-width: 1200px;
-    object-fit: cover;
-    height: 100vh;
-    position: fixed;
-    margin: 25px;
-    z-index: -1;
+   display: none;
     
-} */
+}
 
 .form{
-    width: 70%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
     margin: 5px auto;
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
 }
 
-.form .input {
-    /* padding: 10px; */
+.form .input{
     font-size: 20px;
-    margin: 5px auto;
-    flex-direction: column;
-    width:80%;
+    width:100%;
     height:auto;
 }
 
 .input-campo {
-
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
     border-style: none;
     border: none;
     border-radius: 3px;
-    box-shadow: 2px 2px 4px 2px rgba(218, 141, 9, 0.5);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
     background-color: white;
 }
 
 select {
-    font-size: 1.1rem;
+    font-size: 18px;
     padding: 10px 20px;
     margin: 5px;
     justify-content: center;
     /* width: 40%; */
-    background-color: rgba(244, 142, 59, 0.9);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
     border-radius: 6px;
     border: 1px solid white;
 }
@@ -97,7 +95,7 @@ select {
     padding: 0 5px;
     font-size:16px;
     font-weight: 500;
-    color: white;
+    color: var(--colornaranja);
 }
 
 .form-title {
@@ -105,78 +103,91 @@ select {
     font-weight: 600;
     text-transform: uppercase;
     margin: 15px;
-    color: white;
+    color: var(--colornaranja);
     text-align: center;
+}
+#input-file{
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-style: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+.input-traslado{
+    margin: 10px 0px 10px 10px;
+    padding: 10px;
+}
+
+label{
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
 }
 
 .btn-enviar {
+    margin: 10px;
     padding: 5px 25px;
+    border-radius: 10px;
     width: 65%;
+    height: 35px;
     align-items: center;
-    font-size: 1.5rem;
+    border: none;
+    font-size: 20px;
     font-weight: bold;
-    color: var(--color1);
+    color: white;
     background-color: var(--colornaranja);
-    box-shadow: 2px 2px 8px var(--color2)
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-in;
 }
-/* 
-@media only screen and (max-width:426px) {
-    .container h3 {
-        text-align: center;
-        padding: 20px;
-        margin: 0 30px;
-    }
-
-    .input_campo {
-        width: 75%;
-    }
-
-    .select_campo {
-        width: 100%;
-        margin: 0;
-    }
-
-    .btn_enviar {
-        width: 70%;
-    }
+.btn-enviar:hover{
+    cursor: pointer;
+    transform: scale(1.1);  
 }
-
-@media only screen and (min-width: 768px) {
-    .input_campo {
-        width: 80%;
-    }
-
-    .select_campo {
-        width: 80%;
-    }
+.header-superior a button {
+    margin-top: 10px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--colornaranja);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-in;
 }
-
-@media only screen and (min-width:1440px) {
-    .container {
-        padding: 20px;
+.header-superior a button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@media (min-width: 768px){
+    .container{
+        background-image: none;
+    }
+    #myVideo{
+        display: block;
+        max-width: 1200px;
+        object-fit: cover;
+        height: 100vh;
+        position: fixed;
         margin: 25px;
-        width: 100%;
+        z-index: -1; 
+    }
+    .form-title{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    .box-title{
+        font-size: 20px;
+        font-weight: 700
     }
 
-    .form {
-        display: flex;
-        flex-direction: column;
-    } */
+} 
 
-    .form input {
-        width: 40%;
-    }
-
-    .btn_enviar {
-        width: 65%;
-        font-size: 1.7rem;
-    }
-
-    .box_title {
-        font-size: 1.5rem;
-    }
-
-    .form_title {
-        font-size: 2.5rem;
-    }
-}

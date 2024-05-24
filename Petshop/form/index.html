@@ -14,15 +14,15 @@
     <header>
         <div class="header-superior">
             <img src="../img/inicio-logo.png" alt="logo">
-            <a href="index.html"><button>Volver al inicio</button></a>
+            <a class="btn-vovler" href="../index.html"><button>Volver al inicio</button></a>
         </div>
     </header>
 
 
     <div class="container">
-        <!-- <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop id="myVideo">
             <source src="./video1.mp4" type="video/mp4">
-        </video>    -->
+        </video>   
         <h3 class="form-title">Completa el formulario y pedi tu turno!</h3>
         <p class="box-title">Te contactaremos a la brevedad</p>
         <div class="form">
@@ -30,14 +30,15 @@
                 <p class="box-title">Datos del responsable:</p>
                 <input class="input-campo" type="text" name="nombre" placeholder="Nombre" id="" required>
                 <input class="input-campo" type="text" name="apellido" placeholder="Apellido" id="" required>
-                <input class="input-campo" type="tel" name="tel" placeholder="Numero de telefono" id="" minlength="8"
+                <input class="input-campo" type="tel" name="tel" placeholder="Telefono" id="" minlength="8"
                     required>
-                <input class="input-campo" type="email" name="email" placeholder="Correo electronico" id="" required>
+                <input class="input-campo" type="email" name="email" placeholder="Email" id="" required>
         </div>
         <div class="form">
             <p class="box-title">Datos de tu mascota:</p>
             <input class="input-campo" type="text" name="nombre" placeholder="Nombre" id="" required>
-            <input class="input-campo" type="file" name="archivo" id="" accept="image/png, image/jpeg, image/jpg">
+            <p class="box-title">Envianos una foto de tu mascota</p>
+            <input class="input-file" type="file" name="archivo" id="input-file" accept="image/png, image/jpeg, image/jpg">
             <p class="box-title">Tipo de aseo:</p>
             <select class="select-campo" name="opcion" id="" placeholder="Seleccione una opción">
                 <option value="0">Seleccione una opción</option>
@@ -46,7 +47,7 @@
                 <option value="3">Corte de uñas</option>
                 <option value="4">Combo completo</option>
             </select>
-            <div>
+            <div class="input-traslado">
                 <p class="box-title">Necesitas traslado?:</p>
                 <input type="radio" id="opcion1" name="contact" value="Si" />
                 <label for="opcion1">Si</label>
@@ -59,6 +60,7 @@
         </form>
     </div>
 
+    
 </body>
 
 </html>

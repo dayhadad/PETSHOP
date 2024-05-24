@@ -106,8 +106,8 @@
 /* BOTON IR ARRIBA */
 .container_irArriba {
     position: fixed;
-    bottom: 64px;
-    right: 64px;
+    bottom: 32px;
+    right: 32px;
     width: 80px;
     height: 80px;
     z-index: -1;
@@ -121,8 +121,8 @@
     border-radius: 50%;
     cursor: pointer;
     translate: .2s;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 25%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }

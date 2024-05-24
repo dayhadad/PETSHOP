@@ -35,9 +35,9 @@ html, body{
     /* padding: 40px; */
     max-width: 1200px;
     height: 100%;
-    /* position: fixed; */
+    position: relative;
     display: flex;
-    margin: auto auto;
+    margin: 25px auto;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +175,7 @@ label{
         display: block;
         max-width: 1200px;
         object-fit: cover;
-        height: 100vh;
+        height: 100%;
         position: fixed;
         margin: 25px;
         z-index: -1; 
